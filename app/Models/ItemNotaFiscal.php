@@ -2,11 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class ItemNotaFiscal extends Model
 {
+    use HasFactory;
     protected $table = 'itens_nota_fiscal';
 
     protected $fillable = [
